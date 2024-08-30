@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isopod Adventure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Isopod Adventure</h1>
+<div id="game-output"></div>
+<input type="text" id="user-input" placeholder="Enter your command">
+<button id="submit-button">Submit</button>
+
+<script type="module" src="game.js"></script>
+<script type="module">
+    import { init, setDocument, processCommand } from './game.js';
+    setDocument(document);
+    init();
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('submit-button').addEventListener('click', processCommand);
+    });
+</script>
+</body>
+</html>
