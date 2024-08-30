@@ -1,5 +1,7 @@
 # isopod_js
-Trivial adventure game to learn about build scripts for Plain js and HTML
+Trivial adventure game to learn about build scripts for Plain js and HTML.
+
+See it live [here](https://matthewdeanmartin.github.io/isopod_js/src/)
 
 ## Build Script
 
